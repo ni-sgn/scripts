@@ -1,0 +1,4 @@
+sudo dd if=/dev/zero of=/dev/sdb bs=4k && sync
+sudo fdisk /dev/sdb  // o -> n -> w
+sudo mkfs.vfat /dev/sdb1  
+sudo eject /dev/sdb
