@@ -2,3 +2,28 @@
 pkg install package.tar.gz
 //to load the package
 pkg load package ( e.g pkg load symbolic ) 
+
+//A is a matrix
+A = magic(3) //to create a magic matrix
+any(A) //if column has any non-zero element
+all(A) //if every element in a column is non-zero
+find(A) //enumerating those members which are non-zero
+det(A) //determinant of the matrix
+rank(A) //rank of the matrix
+inv(A) //inverse of the matrix
+transpose(A) or A.' //to transpose a matrix
+
+f = @(x) exp(-x) - log10(25)... //defining a function
+fzero(f, 0.5) //finding the root of f with the precision of 0.5
+fplot(f, [a b]) //plot a function on [a b] segment
+
+//to solve the linear equations
+A = magic(3)
+b = [ 1 1 1 ]
+transpose(b)
+Ax=b
+x= A\b
+
+//symbolic
+syms x
+a = solve( x - 14 == 25 )
