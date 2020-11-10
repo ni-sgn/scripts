@@ -1,0 +1,4 @@
+//in gnu octave to install a package
+pkg install package.tar.gz
+//to load the package
+pkg load package ( e.g pkg load symbolic ) 
