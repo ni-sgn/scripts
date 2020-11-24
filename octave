@@ -27,3 +27,17 @@ x= A\b
 //symbolic
 syms x
 a = solve( x - 14 == 25 )
+
+//division by 2 to find roots
+a=0; fa=-inf;
+b=3; fb=inf;
+while b-a>eps*b
+  x=(a+b)/2;
+  fx=x^3-2*x-5;
+  if sign(fx)==sign(fa)
+    a=x;fa=fx;
+  else
+    b=x;fb=fx;
+  end
+end
+x
